@@ -17,8 +17,8 @@ class CameraPublisher(Node):
         
         # Parameters
         self.declare_parameter('publish_rate', 10.0)  # Hz
-        self.declare_parameter('image_width', 1920)
-        self.declare_parameter('image_height', 1080)
+        self.declare_parameter('image_width', 512)
+        self.declare_parameter('image_height', 512)
         self.declare_parameter('camera_frame_id', 'camera_link')
         self.declare_parameter('camera_topic', '/camera/image_raw')
         self.declare_parameter('camera_info_topic', '/camera/camera_info')
