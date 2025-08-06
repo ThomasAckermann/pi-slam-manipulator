@@ -1,0 +1,20 @@
+[project]
+name = "pi-slam-manipulator"
+version = "0.1.0"
+description = "Desktop robotic arm with visual SLAM"
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[tool.black]
+line-length = 88
